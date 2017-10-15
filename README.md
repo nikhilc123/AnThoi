@@ -1,24 +1,18 @@
-# README
-Basic config
-This README would normally document whatever steps are necessary to get the
-application up and running.
+AnThoi is a Ruby on Rails restaurant Website that let users order foods.
 
-Things you may want to cover:
+Submitted by: Nikhil N. Chikorde
 
-* Ruby version
+URL: ** heroku-app-url*
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[x] User must be able to go to two pages: Menu and Contact US
+[x] User can see the address and phone number on the contact us page
+[x] User can see a basic google map on the Contact Us page
+[] User can navigate to a menu page with 4 sections
+    [] Breakfast
+    [] Lunch
+    [] Dinner
+    [] Drinks
+[] User should see at least 4 food items in each section
+[] Each food item should have the following fields
+    [] Name
+    [] Description

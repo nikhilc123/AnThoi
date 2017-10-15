@@ -1,0 +1,24 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.scss.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.jumbotron{
+  background-color: #ffefef;
+  margin-top: 10px;
+  padding: 32px;
+}
+
+.restaurant-image{
+  img{
+    width: 75%;
+  }
+}
+
+address{
+  padding: 20px;
+  background-color: #efefef;
+}
+
+.navbar{
+  background-color: #efefef;
+}
