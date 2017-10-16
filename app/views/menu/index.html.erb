@@ -3,8 +3,20 @@
 <ul class="nav nav-pills">
   <% @sections.each do |section| %>
     <li class="nav-item">
-      <%= link_to section.name, menu_path(section: section.name), class: "nav-link #{'active' if params[:section] == section.name}" %>
+      <%= link_to section.name, menu_path(section: section.name),
+                  class: "nav-link #{'active' if params[:section] == section.name}" %>
       </a>
     </li>
   <%end%>
+</ul>
+<br>
+<ul class="list-group">
+  <% if @food_items.present? %>
+    <% @food_items.each do |food_item| %>
+      <li class="list-group-item">Name: <%= food_item.name%></li>
+      <li class="list-group-item">Description: <%= food_item.description%></li>
+      <li class="list-group-item">Prie: <%= food_item.price%></li>
+      <br>
+      <%end%>
+  <% end %>
 </ul>
