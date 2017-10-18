@@ -6,7 +6,7 @@
           <li class="list-group-item">Name: <%= food_item.name%></li>
           <li class="list-group-item">Description: <%= food_item.description%></li>
           <li class="list-group-item">Price: <%= number_to_currency(food_item.price, unit: "USD ")%></li><br>
-          <%= link_to "Add to order", new_order_path(food_item_id: food_item.id) %>
+          <%= link_to "Add to order", new_section_food_item_order_path(@section, food_item) %>
           <br>
       <%end%>
   <% end %>

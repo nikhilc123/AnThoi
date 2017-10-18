@@ -3,7 +3,7 @@
 <%# if you do not specify url: ........... then it will complain that id not found
     It should post the request by finding the id %>
 
-<%= form_for @order, url: orders_path(food_item_id: @item.id) do |f| %>
+<%= form_for @order, url: section_food_item_orders_path(@item) do |f| %>
     <% if @order.errors.present? %>
         <div class="alert alert-danger"><%= @order.errors.full_messages.to_sentence%></div>
     <%end%>

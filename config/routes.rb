@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  resources :orders
   resources :sections do
-    resources :food_items
+    resources :food_items do
+      resources :orders
+    end
   end
   # get 'menu/index'
 

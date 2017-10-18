@@ -13,7 +13,7 @@ class OrdersController < ApplicationController
 
     #if you do not save the order, will raise id not found error
     if @order.save
-      flash[:success] = "Thank you for your order!"
+      flash[:notice] = "Thank you for your order!"
       redirect_to sections_path
      else
       render 'new'
